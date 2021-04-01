@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #404040;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===============
+   Typography
+=============== */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 4em 1em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: #00A6C8;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.title-register {
+    font-size: 1.3125rem;
+    color: inherit;
+}
+
+.subtitle {
+    font-size: 1.3125rem;
+}
+
+.body-text {
+    line-height: 1.3;
+}
+
+.mention {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+
+/* ===============
+   Layout
+=============== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-label {
+    padding: 0 .25em 1em;
+    justify-content: space-between;
+    
+    background-image: url(../images/astronaut.jpg);
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-register {
+    padding: 2em 2em;
+}
+
+
+/* ===============
+   media queries
+=============== */
+
+@media (min-width:500px) {
+    body {
+        flex-direction: row;
+    }
+}
