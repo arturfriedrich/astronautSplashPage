@@ -49,9 +49,12 @@ h2 + p {
     font-size: .625rem;
     font-weight: 900;
     color: #00A6C8;
+    padding-top: .5em;
     margin-top: 0;
     text-transform: uppercase;
     order: -1;
+    border-top: 5px solid #00A6C8;
+    border-image: linear-gradient(to right, #00A6C8, #3A5DAE) 1;
 }
 
 .fine-print {
@@ -111,8 +114,37 @@ input,
 
 input {
     margin-bottom: .75em;
-    padding: .5em 1.5em;
-    border: 1px solid #404040;
+    padding: .25em .5em;
+    border: 1px solid #808080;
+    transform: scale(1);
+    transition: 250ms;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: .625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #00A6C8, #3A5DAE);
+    color: #fff;
+    transform: scale(1);
+    transition: 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.1);
 }
 
 
